@@ -1,4 +1,5 @@
 package org.england.ruledemo
+
 import org.england.ruledemo.model.User;
 
 
