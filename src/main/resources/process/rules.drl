@@ -1,0 +1,11 @@
+package org.england.ruledemo
+import org.england.ruledemo.model.User;
+
+
+rule "Check User Age"
+    ruleflow-group "user-age-check"
+when
+    $user : User(age >= 18)
+then
+    System.out.println($user.getName() + " is older than 18.");
+end
