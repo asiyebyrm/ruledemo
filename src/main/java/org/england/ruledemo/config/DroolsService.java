@@ -1,5 +1,6 @@
 package org.england.ruledemo.config;
 
+import jakarta.annotation.PostConstruct;
 import org.england.ruledemo.model.User;
 import org.flowable.engine.RepositoryService;
 import org.flowable.engine.RuntimeService;
@@ -23,11 +24,12 @@ public class DroolsService {
         session.fireAllRules();
         session.dispose();
     }
-
+    @PostConstruct
     public void deployProcess() {
         Deployment deployment = repositoryService.createDeployment()
-                .addClasspathResource("processes/myProcess.bpmn20.xml")
+                .addClasspathResource("processes/myProcess.bpmn2")
                 .deploy();
+
     }
 
     public void startProcess() {
