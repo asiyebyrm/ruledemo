@@ -13,14 +13,13 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-                .csrf(csrf -> csrf.disable()) // CSRF'yi devre dışı bırakmanın yeni yolu
+                .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(authz -> authz
-                        .requestMatchers("/public/**").permitAll()  // Belirli yolları serbest bırak
-                        .requestMatchers("/start-process").permitAll()  // Belirli yolları serbest bırak
-                        .requestMatchers("/flowable/**").permitAll() // Flowable URL'lerine erişimi açın
-
-
-                        .anyRequest().authenticated()  // Diğer tüm yolları koruma altında tut
+                        .requestMatchers("/public/**").permitAll()
+                        .requestMatchers("/start-process").permitAll()
+                        .requestMatchers("/flowable/**").permitAll()
+                        .requestMatchers("/start").permitAll()
+                        .anyRequest().authenticated()
                 );
         return http.build();
     }
