@@ -3,11 +3,13 @@ package org.england.ruledemo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+
+
 @SpringBootApplication
-public class RulwdemoApplication {
+public class RuledemoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(RulwdemoApplication.class, args);
+        SpringApplication.run(RuledemoApplication.class, args);
     }
 
 }

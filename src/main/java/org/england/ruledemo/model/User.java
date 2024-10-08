@@ -1,28 +1,27 @@
 package org.england.ruledemo.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
+//@Entity
+//@Table(name = "users")
+//@Data
+@Getter
+@Setter
 public class User {
+    //    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String name;
     private int age;
 
-    public User(String name, int age) {
+    public User(Long id, String name, int age) {
+        this.id = id;
         this.name = name;
         this.age = age;
     }
 
-    // Getters and setters
-    public String getName() {
-        return name;
-    }
+    public User() {
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
     }
 }

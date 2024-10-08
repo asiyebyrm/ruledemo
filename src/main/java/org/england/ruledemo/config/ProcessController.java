@@ -17,7 +17,7 @@ class ProcessController {
 
     @PostMapping("/start")
     public String startProcess() {
-        flowableService.executeRule(new User("Mehmet",20));
+        flowableService.executeRule(new User(2L,"Mehmet",20));
         return "Process started";
     }
 }

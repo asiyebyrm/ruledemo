@@ -12,7 +12,7 @@ public class RuleTaskDelegate implements JavaDelegate {
 
     @Override
     public void execute(DelegateExecution execution) {
-    User user = new User("Mehmet",17);
+    User user = new User(3L,"Mehmet",17);
     droolsService.executeRule(user);
     }
 }

@@ -11,7 +11,7 @@
     <groupId>org.england</groupId>
     <artifactId>ruledemo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>rulwdemo</name>
+    <name>ruledemo</name>
     <description>rulwdemo</description>
     <url/>
     <licenses>
@@ -30,10 +30,10 @@
         <java.version>17</java.version>
     </properties>
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-data-jpa</artifactId>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
@@ -109,18 +109,16 @@
             <version>7.74.1.Final</version>
         </dependency>
 
-        <!-- jBPM BPMN2 (BPMN 2.0 desteği) -->
-        <dependency>
-            <groupId>org.jbpm</groupId>
-            <artifactId>jbpm-bpmn2</artifactId>
-            <version>7.74.1.Final</version>
-        </dependency>
-
         <!-- Spring Boot Integration (Eğer Spring Boot ile kullanacaksanız) -->
         <dependency>
             <groupId>org.kie</groupId>
             <artifactId>kie-server-spring-boot-starter</artifactId>
             <version>7.74.1.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.camunda.bpm.springboot</groupId>
+            <artifactId>camunda-bpm-spring-boot-starter</artifactId>
+            <version>7.19.0</version>
         </dependency>
     </dependencies>
 
