@@ -102,6 +102,7 @@
             <version>7.74.1.Final</version>
         </dependency>
 
+
         <!-- jBPM Flow (BPMN desteği) -->
         <dependency>
             <groupId>org.jbpm</groupId>
@@ -115,11 +116,11 @@
             <artifactId>kie-server-spring-boot-starter</artifactId>
             <version>7.74.1.Final</version>
         </dependency>
-        <dependency>
-            <groupId>org.camunda.bpm.springboot</groupId>
-            <artifactId>camunda-bpm-spring-boot-starter</artifactId>
-            <version>7.19.0</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.camunda.bpm.springboot</groupId>-->
+<!--            <artifactId>camunda-bpm-spring-boot-starter</artifactId>-->
+<!--            <version>7.19.0</version>-->
+<!--        </dependency>-->
     </dependencies>
 
     <build>
